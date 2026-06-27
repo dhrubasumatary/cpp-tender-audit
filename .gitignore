@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# DuckDB scratch
+*.duckdb
+*.duckdb.wal
+
+# SQLite sidecar files (transient)
+*.db-shm
+*.db-wal
+
+# Project data outputs (regenerable; too large for git)
+parquet/
+.tmp/
+
+# Ferment / harness metadata
+.kimchi/
+
+# Cloudflare / wrangler artefacts
+.wrangler/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Source SQLite databases (large binary blobs, tracked only via SHA256SUMS)
+aoc_tenders.db
+aoc_tenders.db-shm
+aoc_tenders.db-wal
+tenders_vps.db
+tenders_vps.db-shm
+tenders_vps.db-wal
+*.zip
