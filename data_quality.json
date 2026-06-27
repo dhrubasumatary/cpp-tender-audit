@@ -1,0 +1,105 @@
+{
+  "as_of": "2026-06-27T03:27:20+00:00",
+  "source_url": "https://tender.sarthaksidhant.com/",
+  "parquet_root": "parquet",
+  "sample_size": 100,
+  "overall_passed": true,
+  "tables": [
+    {
+      "table": "aoc_tenders",
+      "passed": true,
+      "checks": {
+        "row_count": {
+          "source_rows": 4921960,
+          "parquet_rows": 4921960,
+          "passed": true
+        },
+        "primary_key_unique": {
+          "distinct": 4921960,
+          "total": 4921960,
+          "passed": true
+        },
+        "state_population": {
+          "non_null": 3109757,
+          "total": 4921960,
+          "fraction": 0.6318
+        }
+      }
+    },
+    {
+      "table": "aoc_details",
+      "passed": true,
+      "checks": {
+        "row_count": {
+          "source_rows": 4540739,
+          "parquet_rows": 4540739,
+          "passed": true
+        },
+        "primary_key_unique": {
+          "distinct": 4540739,
+          "total": 4540739,
+          "passed": true
+        },
+        "state_population": {
+          "non_null": 581878,
+          "total": 4540739,
+          "fraction": 0.1281
+        },
+        "json_round_trip": {
+          "sample_size": 100,
+          "clean_rows": 100,
+          "total_mismatches": 0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "table": "tenders",
+      "passed": true,
+      "checks": {
+        "row_count": {
+          "source_rows": 3952191,
+          "parquet_rows": 3952191,
+          "passed": true
+        },
+        "primary_key_unique": {
+          "distinct": 3952191,
+          "total": 3952191,
+          "passed": true
+        },
+        "state_population": {
+          "non_null": 250660,
+          "total": 3952191,
+          "fraction": 0.0634
+        }
+      }
+    },
+    {
+      "table": "tender_details",
+      "passed": true,
+      "checks": {
+        "row_count": {
+          "source_rows": 3178484,
+          "parquet_rows": 3178484,
+          "passed": true
+        },
+        "primary_key_unique": {
+          "distinct": 3178484,
+          "total": 3178484,
+          "passed": true
+        },
+        "state_population": {
+          "non_null": 617045,
+          "total": 3178484,
+          "fraction": 0.1941
+        },
+        "json_round_trip": {
+          "sample_size": 100,
+          "clean_rows": 100,
+          "total_mismatches": 0,
+          "passed": true
+        }
+      }
+    }
+  ]
+}
